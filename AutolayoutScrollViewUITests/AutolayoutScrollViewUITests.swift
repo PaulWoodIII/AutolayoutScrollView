@@ -31,6 +31,13 @@ class AutolayoutScrollViewUITests: XCTestCase {
     func testExample() {
         // Use recording to get started writing UI tests.
         // Use XCTAssert and related functions to verify your tests produce the correct results.
+        
+        let elementsQuery = XCUIApplication().scrollViews.otherElements
+        let refreshButton = elementsQuery.buttons["Refresh"]
+        refreshButton.tap()        
+        NSThread.sleepForTimeInterval(1)
+        refreshButton.tap()
+        
     }
     
 }
