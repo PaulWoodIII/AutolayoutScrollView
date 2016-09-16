@@ -35,7 +35,7 @@ class AutolayoutScrollViewUITests: XCTestCase {
         let elementsQuery = XCUIApplication().scrollViews.otherElements
         let refreshButton = elementsQuery.buttons["Refresh"]
         refreshButton.tap()        
-        NSThread.sleepForTimeInterval(1)
+        Thread.sleep(forTimeInterval: 1)
         refreshButton.tap()
         
     }

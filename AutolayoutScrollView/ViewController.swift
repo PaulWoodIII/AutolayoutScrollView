@@ -25,7 +25,7 @@ class ViewController: UIViewController {
     }
 
     
-    @IBAction func refreshText(sender: UIButton) {
+    @IBAction func refreshText(_ sender: UIButton) {
         label1.text = String.randomLoremIpsumString()
         label2.text = String.randomLoremIpsumString()
         label3.text = String.randomLoremIpsumString()
